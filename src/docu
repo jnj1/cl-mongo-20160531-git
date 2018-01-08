@@ -1,0 +1,10 @@
+bson-decode.lisp:3:(defun ht->list.1 (ht)
+bson-decode.lisp:15:(defun bson-decode (totlen pos docs array &key (container #'ht->document.1))
+bson-decode.lisp:53:                       (setf (gethash key ht) (car (bson-decode eos pos 1 array :container #'ht->list.1)))
+db.lisp:250:    (labels ((ht->list (ht)
+db.lisp:281:		     (kv "name" (keys->name (ht->list index))))))))
+document.lisp:222:(defun ht->document (ht)
+document.lisp:234:(defun ht->document.1 (ht)
+document.lisp:266:(defun ht-test (size)
+packages.lisp:17:   :ht->document
+pair.lisp:123:  (ht->document kv))
